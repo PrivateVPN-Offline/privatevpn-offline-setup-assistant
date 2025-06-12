@@ -1,0 +1,69 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: PrivateVPN Offline Setup Assistant
+email: ianthelambert@outlook.de
+description: >- # this means to ignore newlines until "baseurl:"
+  Offline simulator for the PrivateVPN client.
+  Explore features, test scenarios, and learn the interface without an internet connection.
+  Perfect for training, demos, and UX testing.
+baseurl: "/privatevpn-offline-setup-assistant" # the subpath of your site, e.g. /blog
+url: "https://PrivateVPN-Offline.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: privatevpn
+github_username:  PrivateVPN-Offline
+
+# Build settings
+# theme: minima
+remote_theme: pmarsceill/just-the-docs
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# SEO Settings
+seo:
+  name: PrivateVPN Offline Setup Assistant
+  description: "A standalone interface simulator for the PrivateVPN client. Perfect for training, demos, and UX testing in a secure, offline environment."
+  author: PrivateVPN-Offline
+  twitter:
+    username: privatevpn
+    card: summary_large_image
+
+# Just the Docs theme settings
+color_scheme: dark
+search_enabled: true
+
+aux_links:
+  "View on GitHub":
+    - "https://github.com/PrivateVPN-Offline/privatevpn-offline-setup-assistant"
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be omitted from the rendered
+# site. You can use globbing patterns to exclude whole directories.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/ 
